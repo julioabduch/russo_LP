@@ -59,33 +59,33 @@ const ComparisonSection = () => {
   const t = copy[locale];
 
   return (
-    <section className="py-24">
+    <section className="py-14 sm:py-24">
       <div className="section-container">
-        <AnimatedSection className="text-center mb-16">
+        <AnimatedSection className="mb-10 text-center sm:mb-16">
           <span className="eyebrow-label mb-4">{locale === "pt" ? "Posicionamento" : "Positioning"}</span>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             {t.heading} <span className="text-gradient-gold">{t.headingHighlight}</span>
           </h2>
-          <p className="mx-auto max-w-3xl text-lg text-muted-foreground">{t.subtitle}</p>
+          <p className="mx-auto max-w-3xl text-base text-muted-foreground sm:text-lg">{t.subtitle}</p>
         </AnimatedSection>
 
         <AnimatedSection>
           <div className="surface-panel max-w-5xl mx-auto overflow-hidden">
             <div className="grid grid-cols-2 bg-secondary/70">
-              <div className="p-5 text-center border-r border-border">
+              <div className="border-r border-border p-4 text-center sm:p-5">
                 <span className="font-display font-bold text-muted-foreground text-sm">{t.without}</span>
               </div>
-              <div className="p-5 text-center">
+              <div className="p-4 text-center sm:p-5">
                 <span className="font-display font-bold text-primary text-sm">{t.with}</span>
               </div>
             </div>
 
             {t.rows.map((row, i) => (
               <div key={i} className={`grid grid-cols-2 ${i < t.rows.length - 1 ? "border-b border-border" : ""}`}>
-                <div className="p-6 border-r border-border bg-card/70">
+                <div className="border-r border-border bg-card/70 p-4 sm:p-6">
                   <p className="text-muted-foreground text-sm leading-relaxed">{row.without}</p>
                 </div>
-                <div className="p-6 bg-primary/5">
+                <div className="bg-primary/5 p-4 sm:p-6">
                   <p className="text-foreground text-sm leading-relaxed font-medium">{row.with}</p>
                 </div>
               </div>

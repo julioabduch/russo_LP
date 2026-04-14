@@ -91,9 +91,9 @@ const ShowcaseSection = () => {
   const t = copy[locale];
 
   return (
-    <section className="bg-secondary/30 py-20 sm:py-24">
+    <section className="bg-secondary/30 py-14 sm:py-24">
       <div className="section-container">
-        <AnimatedSection className="mb-10 text-center sm:mb-12">
+        <AnimatedSection className="mb-8 text-center sm:mb-12">
           <span className="eyebrow-label mb-4">{locale === "pt" ? "Oferta" : "Offer"}</span>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             {t.heading} <span className="text-gradient-gold">{t.headingHighlight}</span>
@@ -103,10 +103,10 @@ const ShowcaseSection = () => {
 
         <AnimatedSection>
           <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:gap-8 xl:grid-cols-2">
-            <div className="surface-panel p-5 sm:p-10">
+            <div className="surface-panel p-4 sm:p-10">
               <p className="mb-2 text-xs font-bold text-primary sm:text-sm">{t.app1Label}</p>
               <h3 className="font-display text-2xl sm:text-3xl font-bold mb-2 text-gradient-gold">{t.app1Title}</h3>
-              <p className="mb-6 text-sm text-muted-foreground sm:mb-8 sm:text-base">{t.app1Subtitle}</p>
+              <p className="mb-5 text-sm text-muted-foreground sm:mb-8 sm:text-base">{t.app1Subtitle}</p>
 
               <div className="mb-6 flex flex-wrap gap-2 sm:mb-8">
                 {t.app1Timeline.map((item, index) => (
@@ -123,7 +123,7 @@ const ShowcaseSection = () => {
                 ))}
               </div>
 
-              <div className="mt-6 rounded-xl border border-primary/20 bg-primary/5 p-4 sm:mt-8">
+              <div className="mt-5 rounded-xl border border-primary/20 bg-primary/5 p-4 sm:mt-8">
                 <p className="text-sm text-primary font-medium">{t.app1Highlight}</p>
               </div>
 
@@ -140,10 +140,10 @@ const ShowcaseSection = () => {
               </div>
             </div>
 
-            <div className="surface-panel p-5 sm:p-10">
+            <div className="surface-panel p-4 sm:p-10">
               <p className="mb-2 text-xs font-bold text-primary sm:text-sm">{t.app2Label}</p>
               <h3 className="font-display text-2xl sm:text-3xl font-bold mb-2 text-gradient-gold">{t.app2Title}</h3>
-              <p className="mb-6 text-sm text-muted-foreground sm:mb-8 sm:text-base">{t.app2Subtitle}</p>
+              <p className="mb-5 text-sm text-muted-foreground sm:mb-8 sm:text-base">{t.app2Subtitle}</p>
 
               <div className="mb-6 grid grid-cols-2 gap-2 sm:mb-8 sm:grid-cols-4">
                 {t.app2Modes.map((mode) => (

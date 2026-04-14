@@ -73,9 +73,9 @@ const ProofSection = () => {
   const t = copy[locale];
 
   return (
-    <section className="py-20 sm:py-24">
+    <section className="py-14 sm:py-24">
       <div className="section-container">
-        <AnimatedSection className="mb-12 text-center sm:mb-16">
+        <AnimatedSection className="mb-8 text-center sm:mb-16">
           <p className="text-primary font-display font-bold text-sm uppercase tracking-widest mb-3">{t.label}</p>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             {t.heading} <span className="text-gradient-gold">{t.headingHighlight}</span>
@@ -86,7 +86,7 @@ const ProofSection = () => {
         </AnimatedSection>
 
         {/* Stats */}
-        <div className="mb-14 grid grid-cols-2 gap-3 sm:gap-6 lg:mb-20 lg:grid-cols-4">
+        <div className="mb-10 grid grid-cols-2 gap-3 sm:gap-6 lg:mb-20 lg:grid-cols-4">
           {t.stats.map((s, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
               <div className="card-elevated p-4 text-center sm:p-6">

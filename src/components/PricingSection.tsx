@@ -56,7 +56,7 @@ const PricingSection = () => {
     };
 
   return (
-    <section id="pricing" className="bg-secondary/30 py-20 sm:py-24">
+    <section id="pricing" className="bg-secondary/30 py-14 sm:py-24">
       <div className="section-container">
         <AnimatedSection>
           <div className="max-w-2xl mx-auto text-center">

@@ -33,21 +33,21 @@ const ParaQuemSection = () => {
   const t = copy[locale];
 
   return (
-    <section className="py-24">
+    <section className="py-14 sm:py-24">
       <div className="section-container">
-        <AnimatedSection className="text-center mb-16">
+        <AnimatedSection className="mb-10 text-center sm:mb-16">
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             {t.heading} <span className="text-gradient-gold">{t.headingHighlight}</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="mx-auto max-w-2xl text-base text-muted-foreground sm:text-lg">
             {t.subtitle}
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {t.personas.map((p, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
-              <div className="card-elevated p-6 h-full hover:border-primary/30 transition-colors duration-300">
+              <div className="card-elevated h-full p-5 transition-colors duration-300 hover:border-primary/30 sm:p-6">
                 <span className="text-4xl block mb-4">{p.icon}</span>
                 <h3 className="font-display text-lg font-bold mb-2 text-foreground">{p.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>

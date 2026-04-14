@@ -87,9 +87,9 @@ const MethodSection = () => {
   const t = copy[locale];
 
   return (
-    <section className="py-20 sm:py-24">
+    <section className="py-14 sm:py-24">
       <div className="section-container">
-        <AnimatedSection className="mb-10 text-center sm:mb-14">
+        <AnimatedSection className="mb-8 text-center sm:mb-14">
           <span className="eyebrow-label mb-4">{t.label}</span>
           <h2 className="mb-4 font-display text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
             {t.heading} <span className="text-gradient-gold">{t.headingHighlight}</span>
@@ -111,9 +111,9 @@ const MethodSection = () => {
           </AnimatedSection>
 
           <AnimatedSection delay={0.08}>
-            <div className="surface-panel h-full p-5 sm:p-8">
+            <div className="surface-panel h-full p-4 sm:p-8">
               <span className="eyebrow-label mb-5">{t.experimentLabel}</span>
-              <h3 className="mb-5 font-display text-xl font-bold text-foreground sm:mb-6 sm:text-2xl">{t.experimentTitle}</h3>
+              <h3 className="mb-4 font-display text-xl font-bold text-foreground sm:mb-6 sm:text-2xl">{t.experimentTitle}</h3>
               <div className="space-y-4">
                 {t.experimentSteps.map((step, index) => (
                   <div key={step} className="flex gap-3 sm:gap-4">

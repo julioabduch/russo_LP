@@ -35,19 +35,19 @@ const BenefitsSection = () => {
   const t = copy[locale];
 
   return (
-    <section className="py-24 bg-secondary/30">
+    <section className="bg-secondary/30 py-14 sm:py-24">
       <div className="section-container">
-        <AnimatedSection className="text-center mb-16">
+        <AnimatedSection className="mb-10 text-center sm:mb-16">
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             {t.heading} <span className="text-gradient-gold">{t.headingHighlight}</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">{t.subtitle}</p>
+          <p className="mx-auto max-w-2xl text-base text-muted-foreground sm:text-lg">{t.subtitle}</p>
         </AnimatedSection>
 
-        <div className="max-w-3xl mx-auto space-y-5">
+        <div className="mx-auto max-w-3xl space-y-4 sm:space-y-5">
           {t.benefits.map((b, i) => (
             <AnimatedSection key={i} delay={i * 0.08}>
-              <div className="flex items-start gap-4 p-5 card-elevated hover:border-primary/30 transition-colors duration-300">
+              <div className="card-elevated flex items-start gap-4 p-4 transition-colors duration-300 hover:border-primary/30 sm:p-5">
                 <span className="text-primary text-xl flex-shrink-0 mt-0.5">→</span>
                 <p className="text-foreground leading-relaxed">{b}</p>
               </div>

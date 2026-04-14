@@ -23,10 +23,10 @@ const FooterCTA = () => {
   const t = copy[locale];
 
   return (
-    <section className="py-24 bg-secondary/30">
+    <section className="bg-secondary/30 py-14 sm:py-24">
       <div className="section-container text-center">
         <AnimatedSection>
-          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-6 max-w-3xl mx-auto leading-tight">
+          <h2 className="mx-auto mb-6 max-w-3xl font-display text-2xl font-bold leading-tight sm:text-3xl md:text-4xl">
             {t.line1}{" "}
             <span className="text-gradient-gold">{t.line2}</span>
           </h2>
@@ -39,7 +39,7 @@ const FooterCTA = () => {
         </AnimatedSection>
 
         {/* Footer */}
-        <div className="mt-20 pt-8 border-t border-border">
+        <div className="mt-14 border-t border-border pt-8 sm:mt-20">
           <p className="text-muted-foreground text-xs">{t.copyright}</p>
         </div>
       </div>
