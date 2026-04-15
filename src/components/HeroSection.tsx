@@ -126,7 +126,12 @@ const HeroSection = () => {
           </div>
 
           {/* CTA */}
-          <a href="#pricing" className="cta-button w-full max-w-sm text-sm sm:w-auto sm:text-lg">
+          <a
+            href="https://pay.hotmart.com/X100917713B"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button w-full max-w-sm text-sm sm:w-auto sm:text-lg"
+          >
             {t.cta}
           </a>
 

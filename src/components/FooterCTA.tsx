@@ -31,7 +31,12 @@ const FooterCTA = () => {
             <span className="text-gradient-gold">{t.line2}</span>
           </h2>
 
-          <a href="#pricing" className="cta-button text-base sm:text-lg">
+          <a
+            href="https://pay.hotmart.com/X100917713B"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button text-base sm:text-lg"
+          >
             {t.cta}
           </a>
 

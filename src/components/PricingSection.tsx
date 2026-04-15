@@ -105,7 +105,12 @@ const PricingSection = () => {
                 <p>{t.cheap3}</p>
               </div>
 
-              <a href="#" className="cta-button w-full sm:w-auto block sm:inline-block text-center">
+              <a
+                href="https://pay.hotmart.com/X100917713B"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-button w-full sm:w-auto block sm:inline-block text-center"
+              >
                 {t.cta}
               </a>
 
