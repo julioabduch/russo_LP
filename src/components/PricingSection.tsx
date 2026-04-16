@@ -5,6 +5,10 @@ import { useLocale } from "@/lib/locale";
 const PricingSection = () => {
   const { locale } = useLocale();
   const [time, setTime] = useState({ h: 2, m: 47, s: 33 });
+  const checkoutUrl =
+    locale === "pt"
+      ? "https://pay.hotmart.com/X100917713B"
+      : "https://pay.hotmart.com/X100917713B?off=jfhu8kl9";
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -106,7 +110,7 @@ const PricingSection = () => {
               </div>
 
               <a
-                href="https://pay.hotmart.com/X100917713B"
+                href={checkoutUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-button w-full sm:w-auto block sm:inline-block text-center"

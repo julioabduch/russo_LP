@@ -27,7 +27,7 @@ const copy = {
       {
         title: "Repetição espaçada para fixar",
         text:
-          "Depois, você revisita o material dias depois para empurrar aquilo para a memória de longo prazo. E aí o próximo trecho já fica mais fácil.",
+          "Você revisita o material alguns dias depois para levar aquilo à memória de longo prazo. E aí o próximo trecho já fica mais fácil.",
       },
     ],
     experimentLabel: "Experimento de repetição",

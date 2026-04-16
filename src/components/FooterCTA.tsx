@@ -21,6 +21,10 @@ const copy = {
 const FooterCTA = () => {
   const { locale } = useLocale();
   const t = copy[locale];
+  const checkoutUrl =
+    locale === "pt"
+      ? "https://pay.hotmart.com/X100917713B"
+      : "https://pay.hotmart.com/X100917713B?off=jfhu8kl9";
 
   return (
     <section className="bg-secondary/30 py-14 sm:py-24">
@@ -32,7 +36,7 @@ const FooterCTA = () => {
           </h2>
 
           <a
-            href="https://pay.hotmart.com/X100917713B"
+            href={checkoutUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button text-base sm:text-lg"

@@ -63,6 +63,10 @@ const HeroSection = () => {
   const { locale, setLocale } = useLocale();
   const t = copy[locale];
   const avatars = trustAvatars[locale];
+  const checkoutUrl =
+    locale === "pt"
+      ? "https://pay.hotmart.com/X100917713B"
+      : "https://pay.hotmart.com/X100917713B?off=jfhu8kl9";
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden py-14 sm:py-20">
@@ -127,7 +131,7 @@ const HeroSection = () => {
 
           {/* CTA */}
           <a
-            href="https://pay.hotmart.com/X100917713B"
+            href={checkoutUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button w-full max-w-sm text-sm sm:w-auto sm:text-lg"

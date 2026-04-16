@@ -147,7 +147,7 @@ const ShowcaseSection = () => {
 
               <div className="mb-6 grid grid-cols-2 gap-2 sm:mb-8 sm:grid-cols-4">
                 {t.app2Modes.map((mode) => (
-                  <div key={mode} className="rounded-xl border border-white/10 bg-white/5 px-2 py-3 text-center text-[10px] font-bold uppercase tracking-[0.12em] text-secondary-foreground sm:px-3 sm:text-xs sm:tracking-[0.18em]">
+                  <div key={mode} className="flex min-h-[56px] items-center justify-center rounded-xl border border-white/10 bg-white/5 px-2 py-3 text-center text-[10px] font-bold uppercase leading-tight tracking-[0.12em] text-secondary-foreground [overflow-wrap:anywhere] sm:px-3 sm:text-xs sm:tracking-[0.18em]">
                     {mode}
                   </div>
                 ))}
