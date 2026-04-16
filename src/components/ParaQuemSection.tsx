@@ -33,7 +33,7 @@ const ParaQuemSection = () => {
   const t = copy[locale];
 
   return (
-    <section className="py-14 sm:py-24">
+    <section id="para-quem" className="py-14 sm:py-24">
       <div className="section-container">
         <AnimatedSection className="mb-10 text-center sm:mb-16">
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4">

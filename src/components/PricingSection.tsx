@@ -110,6 +110,7 @@ const PricingSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-button w-full sm:w-auto block sm:inline-block text-center"
+                onClick={() => import("@/lib/pixel").then(m => m.trackInitiateCheckout("pricing"))}
               >
                 {t.cta}
               </a>

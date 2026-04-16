@@ -36,6 +36,7 @@ const FooterCTA = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button text-base sm:text-lg"
+            onClick={() => import("@/lib/pixel").then(m => m.trackInitiateCheckout("footer"))}
           >
             {t.cta}
           </a>

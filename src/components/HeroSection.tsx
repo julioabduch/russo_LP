@@ -131,6 +131,7 @@ const HeroSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button w-full max-w-sm text-sm sm:w-auto sm:text-lg"
+            onClick={() => import("@/lib/pixel").then(m => m.trackInitiateCheckout("hero"))}
           >
             {t.cta}
           </a>

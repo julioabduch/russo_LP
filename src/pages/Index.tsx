@@ -8,8 +8,11 @@ import ComparisonSection from "@/components/ComparisonSection";
 import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
 import FooterCTA from "@/components/FooterCTA";
+import { usePixelScrollTracking } from "@/hooks/use-pixel-scroll-tracking";
 
-const Index = () => (
+const Index = () => {
+  usePixelScrollTracking();
+  return (
   <main className="min-h-screen bg-background">
     <HeroSection />
     <ComparisonSection />
@@ -22,6 +25,7 @@ const Index = () => (
     <FAQSection />
     <FooterCTA />
   </main>
-);
+  );
+};
 
 export default Index;

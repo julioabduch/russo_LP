@@ -73,7 +73,7 @@ const ProofSection = () => {
   const t = copy[locale];
 
   return (
-    <section className="py-14 sm:py-24">
+    <section id="proof" className="py-14 sm:py-24">
       <div className="section-container">
         <AnimatedSection className="mb-8 text-center sm:mb-16">
           <p className="text-primary font-display font-bold text-sm uppercase tracking-widest mb-3">{t.label}</p>
